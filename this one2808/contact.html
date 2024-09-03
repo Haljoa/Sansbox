@@ -29,6 +29,45 @@
                     <section>
                         <h2>konekakte ose</h2>
                     </section>
+                    <section>
+                        <h2>Tae kontaekt meid oos</h2>
+                        <form method="post">
+                            <label for="Navn">Navn:</label>
+                            <input type="text" name="Navn" placeholder="Horus Lupercal" id="Navn" maxlength="45" required>
+                            <label>
+                                E-mail:
+                                <input type="email" name="email" placeholder="horus@heresy.ga" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </label>
+                            <label>
+                                Emene:
+                                <input type="text" name="emne" placeholder="What heretical bull is this" >
+                            </label>
+                            <label>
+                                Mhesage:
+                                <textarea name="melding" required></textarea>
+                            </label>
+                            <label>
+                                nay
+                                <input type="radio" name="valg">
+                            </label>
+                            <label>
+                                aye
+                                <input type="radio" name="valg">
+                            </label>
+                            <input type="submit" value="send melding">
+                            <label>
+                                What god will you chose
+                                <select>
+                                    <option value="Chaos">All of them</option>
+                                    <option value="Khorne">Khorne</option>
+                                    <option value="Tzeentch">Tzeentch</option>
+                                    <option value="Nurgle">Nurgle</option>
+                                    <option value="Slaaneesh">Slaaneesh</option>
+                                    <option value="Mechdude">Vashtorr</option>
+                                </select>
+                            </label>
+                        </form>
+                    </section>
                 </main>
             <footer>copyright lololol</footer>
         </body>
