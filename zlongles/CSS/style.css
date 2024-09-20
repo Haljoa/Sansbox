@@ -1,4 +1,12 @@
 
+html{
+    font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,6 +44,11 @@ img{
     gap: 1rem;
 }
 
+.flex-space h2{
+    width: 100%;
+
+}
+
 .flex-space form label{
     visibility: hidden;
     position: absolute;
@@ -43,4 +56,14 @@ img{
 
 #outlet{
     color: red;
+}
+
+
+.product-card{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
 }
