@@ -1,0 +1,114 @@
+
+main{
+    background-image: url('../sprites/bakgrunn.jpg');
+    background-size: contain;
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@keyframes mariorunning {
+    from {background-image: url('../sprites/staa.png');}
+    to {background-image: url('../sprites/lopende.png');}
+}
+
+@keyframes movemario {
+    0%{
+        left: 0;
+        bottom: 53px;
+    }
+    20%{
+        left: 410px;
+        bottom: 53px;
+    }
+    40%{
+        left: 410px;
+        bottom: 115px;
+    }
+    50%{
+        left: 410px;
+        bottom: 53px;
+    }
+    60%{
+        bottom: 53px;
+        left: 575px;
+    }
+    75%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 53px;
+        left: 800px;
+    }
+}
+
+@keyframes deathmario {
+    0%{
+        background-image: url('../sprites/dead.png');
+        bottom: 53px;
+        left: 800px;
+        transform: rotate(0deg) scale(2);
+    }
+    25%{
+        bottom: 150px;
+        transform: rotate(-45deg) scale(1.8);
+        background-image: url('../sprites/dead.png');
+    }
+    50% {
+        bottom: 200px;
+        transform: rotate(-90deg) scale(1.6);
+        background-image: url('../sprites/dead.png');
+    }
+    75% {
+        bottom: 250px;
+        transform: rotate(-135deg) scale(1.4);
+        background-image: url('../sprites/dead.png');
+    }
+    100% {
+        bottom: 300px;
+        transform: rotate(-180deg) scale(1.2);
+        background-image: url('../sprites/dead.png');
+    }
+}
+
+@keyframes fungusmovement {
+    from {background-image: url('../sprites/sopp.png');}
+    to {background-image: url('../sprites/sopp-kopi.png');}
+
+}
+
+@keyframes movingfungus {
+    from {right: 0;}
+    to {right: 400px;}
+}
+
+#supermario{
+    /* background-image: url('../sprites/staa.png'); */
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    animation-name: mariorunning, movemario, deathmario;
+    animation-iteration-count: infinite, 1, 1;
+    animation-duration: 0.5s, 3s, 0.5s;
+    animation-fill-mode: none, forwards, forwards;
+    animation-delay: 0s, 0s, 3s;
+    z-index: 999;
+}
+
+#fungus{
+    /*background-image: url('../sprites/sopp.png'); */
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: fungusmovement, movingfungus;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0.5s, 0.25s;
+    animation-direction: normal, alternate;
+}
