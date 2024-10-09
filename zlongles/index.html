@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link href="coolfont/css/fontawesome.css" rel="stylesheet">
+        <link href="coolfont/css/brands.css" rel="stylesheet">
+        <link href="coolfont/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="CSS/style.css">
         <title>Zlommey | front page</title>
     </head>
@@ -11,7 +14,8 @@
             <header id="global-header">
                 <img id="main-logo" src="imigis/slommy.jpg" alt="slommy :p">
                 <nav class="flex-space">
-                    <ul class="flex-menu">
+                    <i class="fa-solid fa-burger" onclick="ToggleMenu()"></i>
+                    <ul class="flex-menu" id="menu">
                         <li><a href="index.html">Front paege</a></li>
                         <li><a href="#">Neus</a></li>
                         <li><a href="#">Nordicu Sutyleu</a></li>
@@ -98,5 +102,15 @@
             </main>
             <footer>Zlommey</footer>
         </div>
+        <script>
+            let ToggleMenu = ()=>{
+                let x = document.getElementById("menu")
+                if(x.style.display === "flex"){
+                    x.style.display = "none"
+                }else{
+                    x.style.display = "flex"
+                }
+            }
+        </script>
     </body>
 </html>
