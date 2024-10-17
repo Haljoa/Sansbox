@@ -1,34 +1,17 @@
+@use 'login.scss';
+@use 'layout.scss';
+@use 'fonts.scss' as f;
+@use 'color.scss' as c;
+@use 'mixins.scss' as *;
 
-$wheat: wheat;
-$black: rgba(65, 63, 63);
-$blue: rgb(2, 2, 101);
-$beige: beige;
-
-form{
-    background-color: $beige;
-    padding: 3rem;
-    color: $black;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    gap: 0.5rem
-
-    input{
-        padding: 1rem;
-        border: 1px solid $black;
-    }
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+*{
+    box-sizing: border-box;
 }
 
 body{
-    background-color: $wheat;
+    background-color: c.$wheat;
     height: 100vh;
+    font-family: f.$mainFont;
+    background-image: url(https://picsum.photos/1200/);
+    background-size: cover;
 }

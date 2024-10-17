@@ -1,0 +1,19 @@
+@use 'color.scss' as c;
+@use 'mixins.scss' as *;
+
+form{
+    color: c.$black;
+    @extend .blurredeffect;
+    @include flexbox(column, nowrap, 1rem);
+    @include box(600px, auto, 3rem, 30px);
+
+    label{
+        @include box(100%, auto, 1rem, 30px);
+        @include flexbox(row, nowrap, 0.5rem);
+        background-color: white;
+
+        input{
+            border: none;
+        }
+    }
+}
