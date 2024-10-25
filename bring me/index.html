@@ -8,15 +8,31 @@
         <link rel="stylesheet" href="cool_font/css/brands.css">
         <link rel="stylesheet" href="CSS/main.css">
         <title>The swag</title>
+        <style>
+            .skipper{
+                position: absolute;
+                top: -1000px;
+                background-color: black;
+                color: #ffff;
+                display: inline-block;
+                padding: 0px;
+            }
+            .skipper:focus{
+                top: 1px;
+            }
+        </style>
     </head>
-    <body>
+    <body>       
+       <a href="#main-content" class="skipper">Skip til hovedinnhold</a>
+       <a href="#search" class="skipper">Skip til søk</a>
+        </nav>
         <div id="MainGrid">
             <header id="Global_Header">
                 <form>
                     <label>
                         Searsh funktion
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" placeholder="What are your desires">
+                        <input type="search" placeholder="What are your desires" id="search">
                     </label>
                 </form>
                 <a href="index.html" id="Logo">
@@ -52,7 +68,7 @@
                         Nettleseren støtter ikke video formatet
                     </video>
                 </section>
-                <section>
+                <section id="main-content">
                     <h2>The emperor is the only god you need</h2>
                     <article>
                         <h3>For he is the guiding light of the imperium of man</h3>
