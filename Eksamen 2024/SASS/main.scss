@@ -1,0 +1,21 @@
+@use 'colours.scss' as c;
+@use 'fonts.scss' as f;
+
+
+*{
+    box-sizing: border-box;
+}
+
+.Global-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body{
+    background-color: c.$background;
+    height: 100vh;
+    font-family: f.$mainFont;
+    background-size: cover;
+}
