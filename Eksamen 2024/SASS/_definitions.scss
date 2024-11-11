@@ -1,0 +1,17 @@
+//I dont like having various tags and definitions spread out all over the place 
+//so im collecting all definitions for background stuff here
+//so i can easily keep track of everything
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+$mainFont: Lato, sans-serif;
+
+html{
+    font-size: calc(0.5em + 0.5vw);
+}
+
+
+//----------/\Fonts | Colours \/------------------
+
+
+$background: salmon;

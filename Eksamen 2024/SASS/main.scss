@@ -1,6 +1,5 @@
-@use 'colours.scss' as c;
-@use 'fonts.scss' as f;
-
+@use 'definitions.scss' as f;
+@use 'mixins.scss';
 
 *{
     box-sizing: border-box;
@@ -14,8 +13,12 @@
 }
 
 body{
-    background-color: c.$background;
+    background-color: f.$background;
     height: 100vh;
     font-family: f.$mainFont;
     background-size: cover;
+}
+
+img{
+    max-width: 500px;
 }
