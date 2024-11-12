@@ -1,0 +1,16 @@
+@use 'definitions.scss' as f;
+@use 'mixins.scss';
+
+.product-card{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    background-color: black;
+    border-radius: 4px;
+    padding: 1rem;
+        img{
+            max-width: fit-content;
+            max-height: fit-content;
+        }
+}

@@ -1,5 +1,6 @@
 @use 'definitions.scss' as f;
 @use 'mixins.scss';
+@use 'details.scss';
 
 *{
     box-sizing: border-box;
@@ -19,7 +20,3 @@ body{
     background-size: cover;
 }
 
-img{
-    max-width: 500px;
-    
-}

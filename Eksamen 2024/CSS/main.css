@@ -3,6 +3,22 @@ html {
   font-size: calc(0.5em + 0.5vw);
 }
 
+.product-card {
+  max-width: 350px;
+  min-width: 200px;
+  width: 100%;
+  box-shadow: 13px 9px 20px 0px #efefef;
+  background-color: black;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.product-card img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,8 +35,4 @@ body {
   height: 100vh;
   font-family: Lato, sans-serif;
   background-size: cover;
-}
-
-img {
-  max-width: 500px;
 }/*# sourceMappingURL=main.css.map */
