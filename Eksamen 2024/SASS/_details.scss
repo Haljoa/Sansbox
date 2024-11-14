@@ -1,12 +1,2 @@
 @use 'definitions.scss' as f;
 @use 'mixins.scss';
-
-.product-card{
-    max-width: 200px;
-    min-width: 350px;
-    width: 100%;
-    box-shadow: 13px 9px 20px 0px f.$edge_colour;
-    background-color: f.$background2;
-    border-radius: 4px;
-    padding: 1rem;
-}

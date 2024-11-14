@@ -4,7 +4,6 @@
 
 *{
     font-family: f.$mainFont;
-    background-color: f.$background;
 }
 
 .Global-container{
@@ -48,10 +47,24 @@ main{
 }
 
 #Popular_products{
+    border: 4px solid black;
     @include flexbox(row, wrap, 0.5rem);
+    justify-content: center;
+    background-color: f.$background;
+}
+
+.product-card{
+    border: 2px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    background-color: f.$background2;
+    border-radius: 4px;
+    padding: 1rem;
 }
 
 footer{
+    border: 4px solid black;
     align-self: flex-end;
     height: 2rem;
     background-color: f.$background2;
