@@ -4,10 +4,10 @@ html {
 }
 
 .product-card {
-  max-width: 350px;
-  min-width: 200px;
+  max-width: 200px;
+  min-width: 350px;
   width: 100%;
-  box-shadow: 13px 9px 20px 0px #efefef;
+  box-shadow: 13px 9px 20px 0px white;
   background-color: black;
   border-radius: 4px;
   padding: 1rem;

@@ -2,11 +2,11 @@
 @use 'mixins.scss';
 
 .product-card{
-    max-width: 350px;
-    min-width: 200px;
+    max-width: 200px;
+    min-width: 350px;
     width: 100%;
-    box-shadow: 13px 9px 20px 0px #efefef;
-    background-color: black;
+    box-shadow: 13px 9px 20px 0px f.$edge_colour;
+    background-color: f.$background2;
     border-radius: 4px;
     padding: 1rem;
         img{
