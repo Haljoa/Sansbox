@@ -11,7 +11,7 @@
     </head>
 <body>
     <div id="Global-Container">
-        <Header>
+        <Header id="Global-Header">
             <h1>Front page</h1>
             <nav>
                 <ul>
@@ -20,50 +20,59 @@
                     <li><a href="#Popular_products">Popular</a></li>
                     <li><a href="checkout.html">Checkout</a></li>
                     <li><a href="#Footer">Contact us</a></li>
+                    <li>
+                        <form>
+                            <label>Search</label>
+                            <input type="search" placeholder="Search" id="search">
+                            <input type="submit" value="Search">
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </Header>
-        <main>
-            <section id="Popular_products">
+        <main id="Product-Container">
+            <section id="Banner">
                 <h2>Our most popular products</h2>
+            </section>
+            <section id="Popular_products">
                 <article class="product-card">
                     <picture>
                         <source srcset="images/gilde_salami.jpg">
                         <img src="images/gilde_salami.jpg" alt="gilde salami" width="160" height="300">
                     </picture>
-                    <a href="#"><h3>salami</h3></a>
+                    <a href="#"><h3>Salami</h3></a>
                     <p>1.5$</p>
                 </article>
                 <article class="product-card">    
                     <img src="images/grillstad_salami.jpg" alt="Grillstad salami" width="200" height="350">
-                    <a href="#"><h3>salami</h3></a>
+                    <a href="#"><h3>Salami</h3></a>
                     <p>1.5$</p>
                 </article>
                 <article class="product-card">
                     <img src="images/aguila_salami.jpg" alt="aguila salami" width="300" height="300">
-                    <a href="#"><h3>salami</h3></a>
+                    <a href="#"><h3>Salami</h3></a>
                     <p>1.5$</p>
                 </article>
                 <article class="product-card">
                     <img src="images/bjerke_salami.jpg" alt="bjerke salami" width="190" height="360">
-                    <a href="#"><h3>salami</h3></a>
+                    <a href="#"><h3>Salami</h3></a>
                     <p>1.5$</p>
                 </article>
                 <article class="product-card">
                     <img src="images/first_price_salami.jpg" alt="first price salami" width="175" height="375">
-                    <a href="#"><h3>salami</h3></a>
+                    <a href="#"><h3>Salami</h3></a>
                     <p>1.5$</p>
                 </article>
                 <article class="product-card">
                     <img src="images/svindland_salami.jpg" alt="Svindland salami" width="250" height="400">
-                    <a href="#"><h3>salami</h3></a>
+                    <a href="#"><h3>Salami</h3></a>
                     <p>1.5$</p>
                 </article>
             </section>
         </main>
         <footer id="Footer">
-            Contact us at: place@holder
-            <a href="#">Twitter</a>
+            <a>Place@Holder</a>
+            <a href="#">Bluesky</a>
             <a href="#">Youtube</a>
             <a href="#">Facebook</a>
             <a href="#">Tumblr</a>
