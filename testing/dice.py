@@ -1,5 +1,5 @@
 import random
 
-output = random.randrange(0, 100)
+output = random.randrange(0, 101)
 
 print(output)
