@@ -11,11 +11,9 @@ html {
 .Global-container {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
 }
 
 h1 {
-  flex-grow: 1;
   justify-self: center;
   width: 200px;
 }
