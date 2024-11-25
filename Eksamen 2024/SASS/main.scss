@@ -10,6 +10,7 @@
 .Global-container{
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
 }    
 
 h1{
@@ -18,11 +19,9 @@ h1{
 }
 
 nav{
-    background-color: f.$background2;
     height: 2rem;
-    display: flex;
-    justify-content: center;
-    
+    border: 2px solid black;
+
     ul{
     display: flex;
     list-style: none;
@@ -31,35 +30,39 @@ nav{
     gap: 1rem;
     height: 2rem;
     background-color: f.$background2;
-        
+    justify-content: space-evenly;
+    
         *{
             background-color: f.$background2;
         }
         a{
             height: 2rem;
+            color: black;
         }
         input{
             background-color: white;
+            max-width: 5rem;
         }
     }
 }
 
 #Popular_products{
     @include flexbox(row, wrap, 0.5rem);
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: f.$background;
 }
 
 .product-card{
     flex-grow: 1;
     border: 2px solid black;
-    min-width: 200px;
+    min-width: 300px;
     background-color: f.$background2;
     border-radius: 4px;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
     *{
         background-color: f.$background2;
         align-items: center;
@@ -68,20 +71,30 @@ nav{
 }
 
 footer{
-    border-radius: 4px;
-    align-self: flex-end;
-    height: 2rem;
+    border: 2px solid black;
     background-color: f.$background2;
     display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    flex-wrap: wrap;
-    a{
+    justify-content: space-evenly;
+
+    *{
         background-color: f.$background2;
-        color: black;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        gap: 1rem;
     }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        background-color: f.$background2;
+        flex-direction: column;
+        gap: 10px;
+        a{
+            padding: 5px;
+            background-color: f.$background2;
+            color: black;
+        }
+    }
+}
+
+.footer_navigation{
+    flex-direction: row;
 }
