@@ -7,9 +7,9 @@
     border-radius: $bradious;
 }
 
-@mixin flexbox($direction, $wrap, $gap){
+@mixin flexbox($direction, $wrap, $content){
     display: flex;
     flex-direction: $direction;
     flex-wrap: $wrap;
-    gap: $gap;
+    justify-content: $content;
 }
